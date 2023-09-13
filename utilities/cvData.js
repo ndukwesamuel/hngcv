@@ -1,8 +1,7 @@
 export const data1 = {
   fullName: "Ndukwe Samuel",
-  slackUsername: "ndukwesamuel23@gmail.com",
-  githubHandle: "https://www.linkedin.com/in/samuel-ndukwe/",
-  githubHandle: "https://www.linkedin.com/in/samuel-ndukwe/",
+  slackUsername: "Ndukwe Samuel",
+  githubHandle: "ndukwesamuel",
   bio: "Passionate software developer with three years of experience building scalable applications. Proficient in JavaScript, Python, Django, React, React Native, and Node.js. I worked at Bcodestech Limited, TechStudio Academy, and Kitovu, gaining valuable insights. Thrive in dynamic environments. Committed to continuous learning, delivering innovative solutions, and empowering aspiring developers. Always eager to push the boundaries of software development.",
   profile: "https://ca.slack-edge.com/T05FFAA91JP-U05QVKB2JQ7-0e41659bc1ca-512",
   track: "Mobile Development",
@@ -85,11 +84,14 @@ export const myprojects = [
       "Developed an Uber-like mobile app using React Native and Expo, providing seamless car-hailing with features like ride requests, driver tracking.",
   },
   {
+    link: "https://www.solvateafrica.com",
+
     name: "Solvate",
     description:
       "Developed a versatile frontend application using React, enabling users to hire freelancers for various tasks, providing a platform similar to popular freelance platforms https://www.solvateafrica.com.",
   },
   {
+    link: "https://hrcore.ng",
     name: "HRCORE",
     description:
       "Leading frontend team developing an innovative HR system with Node.js and React. Implemented features including employee management, leave tracking, and performance evaluations. Collaborating with developers for smooth execution. Project is 60% completed, emphasizing user-friendly interface and robust functionality.",

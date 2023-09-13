@@ -27,7 +27,6 @@ export default function App() {
   const handleEdit = () => {
     setEditing(!editing);
   };
-  console.log({ careerExperiences });
 
   const handleUpdate = (updatedData) => {
     setCVData(updatedData);

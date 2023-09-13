@@ -8,6 +8,7 @@ import {
   StyleSheet,
   ScrollView,
   Image,
+  Pressable,
 } from "react-native";
 
 export default function Create({
@@ -122,11 +123,11 @@ export default function Create({
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.container}>
-        <Text style={styles.header}>Edit CV</Text>
-
-        <View style={{ flex: 1, padding: 16 }}>
-          <Text style={{ fontSize: 20, marginBottom: 10 }}>Profile:</Text>
+      <ScrollView style={{ backgroundColor: "white" }}>
+        <View style={{ padding: 16 }}>
+          <Text style={{ fontSize: 20, marginBottom: 10, textAlign: "center" }}>
+            Update your CV
+          </Text>
           <View
             style={{
               margin: "auto",
@@ -236,6 +237,7 @@ export default function Create({
                     borderWidth: 1,
                     borderColor: "gray",
                     padding: 8,
+                    borderRadius: 10,
                   }}
                   placeholder={`Skill ${index + 1}`}
                   value={skill}
@@ -245,7 +247,30 @@ export default function Create({
                     setDataskills(updatedSkills);
                   }}
                 />
-                <Button title="Remove" onPress={() => removeSkill(index)} />
+                {/* <Button title="Remove" onPress={() => removeSkill(index)} /> */}
+                <Pressable
+                  onPress={() => removeSkill(index)}
+                  style={{
+                    backgroundColor: "red",
+                    borderRadius: 50, // Use a numeric value for borderRadius
+                    width: 30,
+                    height: 30,
+                    marginTop: 10,
+                    alignItems: "center",
+                    justifyContent: "center", // Center the text vertically and horizontally
+                  }}
+                >
+                  <Text
+                    style={{
+                      color: "white",
+                      textAlign: "center",
+                      fontSize: 20,
+                      fontWeight: "bold",
+                    }}
+                  >
+                    x
+                  </Text>
+                </Pressable>
               </View>
             ))}
           </ScrollView>
@@ -335,10 +360,35 @@ export default function Create({
                     Certification_handleChange(index, "grade", text)
                   }
                 />
-                <Button
-                  title="Remove"
-                  onPress={() => removeCertification(index)}
-                />
+
+                <View
+                  style={{
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Pressable
+                    onPress={() => removeCertification(index)}
+                    style={{
+                      backgroundColor: "red",
+                      borderRadius: 10,
+                      marginVertical: 10,
+                      width: "50%",
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: "white",
+                        textAlign: "center",
+                        paddingVertical: 10,
+                      }}
+                    >
+                      {" "}
+                      Remove
+                    </Text>
+                  </Pressable>
+                </View>
               </View>
             ))}
           </ScrollView>
@@ -406,10 +456,35 @@ export default function Create({
                     CareerExperience_handleChange(index, "description", text)
                   }
                 />
-                <Button
-                  title="Remove"
-                  onPress={() => removeExperience(index)}
-                />
+
+                <View
+                  style={{
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Pressable
+                    onPress={() => removeExperience(index)}
+                    style={{
+                      backgroundColor: "red",
+                      borderRadius: 10,
+                      marginVertical: 10,
+                      width: "50%",
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: "white",
+                        textAlign: "center",
+                        paddingVertical: 10,
+                      }}
+                    >
+                      {" "}
+                      Remove
+                    </Text>
+                  </Pressable>
+                </View>
               </View>
             ))}
           </ScrollView>
@@ -462,7 +537,35 @@ export default function Create({
                     Project_handleChange(index, "description", text)
                   }
                 />
-                <Button title="Remove" onPress={() => removeProject(index)} />
+
+                <View
+                  style={{
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Pressable
+                    onPress={() => removeProject(index)}
+                    style={{
+                      backgroundColor: "red",
+                      borderRadius: 10,
+                      marginVertical: 10,
+                      width: "50%",
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: "white",
+                        textAlign: "center",
+                        paddingVertical: 10,
+                      }}
+                    >
+                      {" "}
+                      Remove
+                    </Text>
+                  </Pressable>
+                </View>
               </View>
             ))}
           </ScrollView>
@@ -541,8 +644,17 @@ export default function Create({
           />
         </View>
       </ScrollView>
-
-      <Button title="Back" onPress={onCancel} style={styles.editButton} />
+      <Pressable
+        onPress={onCancel}
+        style={{ backgroundColor: "#1C3144", borderRadius: 10, marginTop: 3 }}
+      >
+        <Text
+          style={{ color: "white", textAlign: "center", paddingVertical: 10 }}
+        >
+          {" "}
+          Back
+        </Text>
+      </Pressable>
     </View>
   );
 }
