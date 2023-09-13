@@ -1,7 +1,4 @@
-This project is a mobile app that displays my Slack identity and profile photo, putting a face to the name and creating a more personal relationship.
-
- there is more! What distinguishes this app is its handy "Open GitHub" button. Thanks to a WebView component that smoothly redirects you, you can see my GitHub profile immediately within the app with a single tap. This feature allows you to easily browse my projects, contributions, and repositories without leaving the application, making it easier to get to know me and my work.
-
+hngCV is a mobile application created with Expo that allows users to build and manage their personal curriculum vitae (CV) in a dynamic and engaging way. The app features a Home Screen that offers a snapshot of your CV, and a Create Screen where you can update and customize your CV with ease. With a user-friendly interface, real-time updates, and seamless integration options, hngCV empowers professionals, students, and individuals to showcase their skills and experiences effectively. Download the app today and share your story beautifully.
 
 ## Prerequisites
 
@@ -17,9 +14,9 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ndukwesamuel/hngstage.git
+   git clone https://github.com/ndukwesamuel/hngcv.git
    cd hngstage
-
+   ```
 
 Install project dependencies:
 
